@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML & CSS Notes</title>
+</head>
+<body>
+    <header>
+        <img src="webimg.png" alt="Logo" class="logo">
+        <h1>HTML & CSS Notes</h1>
+        <p>Your one-stop reference for web development basics</p>
+    </header>
+    <div class="container">
+        <h2 class="section-header">Topics Covered</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-header">
+                    <h3>HTML Basics <br> <p style="color: orange; font-size: small; font-weight: 300;">(Hover Here to see content)</p> </h3>
+                </div>
+                <div class="card-content">
+                    <p>HTML (HyperText Markup Language) is the standard language for creating webpages. It forms the skeleton structure of web content.</p>
+                    <div class="subsection">
+                        <h3>Key HTML Elements</h3>
+                        <ul>
+                            <li><code>&lt;html&gt;</code> - Root element</li>
+                            <li><code>&lt;head&gt;</code> - Contains meta-information about the document</li>
+                            <li><code>&lt;body&gt;</code> - Contains the visible content of the webpage</li>
+                        </ul>
+                    </div>
+                    <div class="subsection">
+                        <h3>Common Tags</h3>
+                        <ul>
+                            <li><code>&lt;h1&gt;-&lt;h6&gt;</code> - Header tags for titles</li>
+                            <li><code>&lt;p&gt;</code> - Paragraph tag</li>
+                            <li><code>&lt;a&gt;</code> - Anchor tag for links</li>
+                            <li><code>&lt;img&gt;</code> - Image tag for displaying images</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>CSS Basics <p style="color: orange; font-size: small; font-weight: 300;">(Hover Here to see content)</p></h3>
+                </div>
+                <div class="card-content">
+                    <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls the appearance of the elements defined in HTML.</p>
+                    <div class="subsection">
+                        <h3>Types of CSS</h3>
+                        <ul>
+                            <li>Inline CSS: Directly applied to HTML elements using the <code>style</code> attribute.</li>
+                            <li>Internal CSS: Defined within a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.</li>
+                            <li>External CSS: Linked to an HTML file using the <code>&lt;link&gt;</code> tag.</li>
+                        </ul>
+                    </div>
+                    <div class="subsection">
+                        <h3>Common CSS Properties</h3>
+                        <ul>
+                            <li><code>color</code> - Changes the text color</li>
+                            <li><code>background-color</code> - Sets the background color</li>
+                            <li><code>font-size</code> - Defines the size of text</li>
+                            <li><code>margin</code> and <code>padding</code> - Controls spacing between elements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Forms <p style="color: orange; font-size: small; font-weight: 300;">(Hover Here to see content)</p></h3>
+                </div>
+                <div class="card-content">
+                    <p>Forms are used to collect user input. HTML forms can contain various elements such as text fields, buttons, and checkboxes.</p>
+                    <div class="subsection">
+                        <h3>Common Form Elements</h3>
+                        <ul>
+                            <li><code>&lt;input&gt;</code> - Defines an input field (e.g., text, email, password).</li>
+                            <li><code>&lt;textarea&gt;</code> - Defines a multi-line text input.</li>
+                            <li><code>&lt;button&gt;</code> - Defines a clickable button.</li>
+                        </ul>
+                    </div>
+                    <div class="subsection">
+                        <h3>Input Types</h3>
+                        <ul>
+                            <li>text - Single-line text input</li>
+                            <li>email - Input for email addresses, with automatic validation</li>
+                            <li>password - Input for passwords, hides characters as typed</li>
+                            <li>submit - A button that submits the form</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div>
+            <h2 class="section-header">Contact Us</h2>
+            <form action="#">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Web Development Notes</p>
+    </footer>
+</body>
+</html>
